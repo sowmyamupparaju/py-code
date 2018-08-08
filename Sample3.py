@@ -28,3 +28,9 @@ def two_word1(text):
 	
 def closest(n):
     return ((abs(100 - n) <= 10) or (abs(200 - n) <= 10))
+
+## Given a sentence, return a sentence with the words reversed
+	
+def reverse(text):
+    x = text.split()
+    return ' '.join(x[::-1])

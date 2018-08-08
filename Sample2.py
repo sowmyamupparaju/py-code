@@ -25,6 +25,18 @@ def up_low():
     print("Upper case characters : ", d["upper"])
     print("Lower case Characters : ", d["lower"])
 
- 
-palindrome()
-up_low()
+	 ### count primes ###
+def count_p(num):
+    p = [2]
+    x = 3
+    if num < 2:
+        return 0
+    while x <= num:
+        for y in p:  # use the p list!
+            if x%y == 0:
+                x += 2
+                break
+        else:
+            p.append(x)
+            x += 2
+    print(p)
